@@ -1,0 +1,9 @@
+https://docs.visor.finance/learn/audits
+https://medium.com/visorfinance/post-mortem-for-vvisr-staking-contract-exploit-and-upcoming-migration-7920e1dee55a
+https://twitter.com/BlockSecTeam/status/1473343144620015619
+https://twitter.com/Mudit__Gupta/status/1464657484367339527
+https://twitter.com/VisorFinance/status/1464574917056385025
+https://twitter.com/VisorFinance/status/1473317327601078279
+https://twitter.com/storming0x/status/1473321779250802693
+https://visorfinance.medium.com/visor-beta-incident-report-1b2521b9266
+https://www.visor.finance/

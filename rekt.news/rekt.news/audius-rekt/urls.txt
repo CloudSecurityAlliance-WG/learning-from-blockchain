@@ -1,0 +1,10 @@
+https://assets.website-files.com/6024b69839b1b755528798ea/6201872afb297b3955e303aa_Audius%20-%20Security%20Assessment%20for%20Audius%20Protocol%20v1.1.0.pdf
+https://blog.audius.co/article/audius-governance-takeover-post-mortem-7-23-22
+https://blog.openzeppelin.com/audius-contracts-audit/
+https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies#unstructured-storage-proxies
+https://twitter.com/0xSisyphus/status/1550993262567198721
+https://twitter.com/AudiusProject/status/1551000725169180672
+https://twitter.com/AudiusProject/status/1551378752424161280
+https://twitter.com/spreekaway/status/1550995634899009536
+https://twitter.com/spreekaway/status/1551000138134556672
+https://www.coingecko.com/en/coins/audius

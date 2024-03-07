@@ -1,0 +1,15 @@
+https://blocksecteam.medium.com/yet-another-risk-posed-by-precision-loss-an-in-depth-analysis-of-the-recent-balancer-incident-fad93a3c75d4
+https://docs.balancer.fi/reference/contracts/security.html
+https://ftmscan.com/address/0x64E08fa89C2bAE9F123cc8a293775f0E6CC86760
+https://medium.com/balancer-protocol/incident-with-non-standard-erc20-deflationary-tokens-95a0f6d46dea
+https://medium.com/balancer-protocol/rate-manipulation-in-balancer-boosted-pools-technical-postmortem-53db4b642492
+https://twitter.com/Balancer/status/1694014645378724280
+https://twitter.com/Balancer/status/1695064684620140942
+https://twitter.com/Balancer/status/1696930832760635566
+https://twitter.com/BeosinAlert/status/1696362629818908758
+https://twitter.com/Tree_of_Alpha/status/1702266183016149061
+https://twitter.com/WatcherGuru/status/1696214485566881991
+https://twitter.com/beethoven_x
+https://twitter.com/lemiscate/status/1694254310354301396
+https://twitter.com/peckshield/status/1696185272445419961
+https://twitter.com/realChrisBrunet/status/1695640932228419701

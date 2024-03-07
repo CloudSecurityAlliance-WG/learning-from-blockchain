@@ -1,0 +1,11 @@
+https://docs.uniswap.org/protocol/V2/concepts/core-concepts/oracles
+https://ftmscan.com/address/0x1ed5112b32486840071b7cdd2584ded2c66198dd
+https://ftmscan.com/address/0xb8f5c9e18abbb21dfa4329586ee74f1e2b685009
+https://ftmscan.com/address/0xec1fc57249cea005fc16b2980470504806fca20d#code
+https://ftmscan.com/tx/0x09dc3a1afd1dae211c31d7ad4b5cd6f68c9350727fa5d4c7c63efb9d287e3210
+https://ftmscan.com/tx/0xe374495036fac18aa5b1a497a17e70f256c4d3d416dd1408c026f3f5c70a3a9c
+https://samczsun.com/so-you-want-to-use-a-price-oracle/
+https://twitter.com/DeusDao/status/1503652836978143242?s=20&amp;t=7KOBNi8X9vonyspyd2rC0A
+https://twitter.com/lafachief/status/1503678891386359808
+https://twitter.com/peckshield/status/1503632734299701250
+https://www.coingecko.com/en/coins/deus-finance

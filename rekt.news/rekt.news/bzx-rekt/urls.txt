@@ -1,0 +1,16 @@
+https://bzx.network/
+https://bzx.network/blog/incident
+https://bzx.network/blog/postmortem-ethdenver
+https://bzx.network/blog/prelminary-post-mortem
+https://bzx.network/contracts
+https://mobile.twitter.com/ChrisBlec/status/1456649881234415622
+https://polygonscan.com/address/0xafad9352eb6bcd085dd68268d353d0ed2571af89
+https://polygonscan.com/tokenapprovalchecker
+https://polygonscan.com/tx/0x8eebe7f20a89c6a63b45ed870d3f98ad5c4dc19dc7bf37ee6e050069aa48693c
+https://twitter.com/AltsMang/status/1456617000692822023?s=20
+https://twitter.com/BitCoinN00b/status/1456603995116654596?s=20
+https://twitter.com/SlowMist_Team/status/1456647033826123780
+https://twitter.com/bZxHQ/status/1456603269355094021?s=20
+https://twitter.com/bZxHQ/status/1456749615521406978
+https://twitter.com/bneiluj/status/1228757175595438080
+https://www.coingecko.com/en/coins/bzx-protocol
