@@ -1,0 +1,11 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that enabled the attacker to execute this incident was:
+
+A faulty upgrade to the Nomad bridge's Replica contract initialized the 0x00 address as a trusted root. This caused all messages to be read as valid by default, bypassing the normal validity checks. The attacker was then able to directly call the process() function to drain funds, without first proving the validity of the message batch. Subsequent attackers were able to simply copy the exploit transaction to also drain funds.
+
+In summary, an upgrade bug allowed attackers to bypass the bridge's message validity checks and freely drain funds by calling process().
+================================================================================
+METADATA:
+prompt_tokens: 901
+answer_tokens: 107
+time_taken: 9.41 seconds

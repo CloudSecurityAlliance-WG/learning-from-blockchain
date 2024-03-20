@@ -1,0 +1,3 @@
+Examine the following markdown text, which is a write-up of a blockchain-based incident, and explain the vulnerability or weakness the attacker used to execute their attack. Please get as technical as you need to. If there are not enough details to determine how the attack took place please say so, this will be immensely helpful, use the phrase "There is not enough information to determine how the attack took place"
+
+

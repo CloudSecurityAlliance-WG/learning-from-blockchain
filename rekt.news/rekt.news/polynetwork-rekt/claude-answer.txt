@@ -1,0 +1,19 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that enabled the attacker to execute this hack was an issue with Poly Network's cross-chain relay contracts, specifically the EthCrossChainManager contract. 
+
+The key points are:
+
+- The EthCrossChainManager contract has the ability to trigger cross-chain transactions by calling the verifyHeaderAndExecuteTx function. This function verifies the transaction is valid and then executes it by calling executeCrossChainTx.
+
+- There is no check in place to prevent executeCrossChainTx from calling sensitive/privileged contracts like the EthCrossChainData contract. 
+
+- The attacker realized this and crafted the necessary data and sighash to trick the EthCrossChainManager into calling the putCurEpochConPubKeyBytes function on the EthCrossChainData contract. This allowed them to update the public keys and take control.
+
+- By exploiting the lack of proper permissions and checks around what contracts can be called via these cross-chain functions, the attacker was able to call a privileged function and take control of key parts of the system.
+
+In summary, the issue was insufficient authentication and permission checks on a privileged cross-chain contract function, which the attacker was able to exploit to their benefit. Please let me know if you need any clarification or have additional questions!
+================================================================================
+METADATA:
+prompt_tokens: 1469
+answer_tokens: 193
+time_taken: 16.41 seconds

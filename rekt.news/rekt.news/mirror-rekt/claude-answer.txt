@@ -1,0 +1,23 @@
+Status: SUCCESS
+Message:  Based on the details provided, the first exploit executed on October 8, 2021 involved repeatedly unlocking collateral deposited against short positions on Mirror Protocol by exploiting a vulnerability in the lock contract. Specifically:
+
+- The lock contract did not contain a duplicate call check for withdrawals. This allowed the attacker to drain funds deposited by other users by calling the unlock_position_funds function for their own position ID multiple times.
+
+- Each call to unlock_position_funds unlocked funds deposited as collateral by other users. By calling it repeatedly, the attacker was able to drain those funds.
+
+The key vulnerabilities were:
+
+1) Lack of duplicate call check in the withdraw function of the lock contract. This allowed an attacker to call it repeatedly.
+
+2) The withdraw function unlocked collateral deposited by other users if provided with the attacker's own position ID. This allowed the attacker to drain those funds.
+
+The attack transaction that exploited this is provided:
+
+08DD2B70F6C2335D966342C20C1E495FD7A8872310B80BAF3450B942F79EBC1F
+
+In summary, the vulnerability was in the lock contract's lack of protection against repeated calls to drain collateral deposited by other users. The attacker exploited this by calling the unlock function repeatedly using their own position ID.
+================================================================================
+METADATA:
+prompt_tokens: 774
+answer_tokens: 192
+time_taken: 15.03 seconds

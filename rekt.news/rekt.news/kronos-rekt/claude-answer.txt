@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the vulnerability or weakness the attacker exploited was unauthorized access to some of Kronos Research's API keys. Specifically:
+
+>"[Kronos] admitted to having suffered an attack via “_unauthorized access of some of our API keys_”
+
+The attacker was then able to use these compromised API keys to drain funds from Kronos Research's accounts on multiple exchanges across both Ethereum and BSC chains. 
+
+Over $26 million in assets were taken from accounts on OKX, Binance, BTSE, and Deeocoin exchanges by transferring them directly to the attacker's wallet address or flowing them through Kronos' address first likely due to whitelist restrictions.
+
+The post does not provide full technical details on exactly how the API keys were compromised or how the attacker gained the unauthorized access. But with the access, they were able to initiate withdrawals from the exchange accounts programmatically using the APIs.
+
+So in summary, the core weakness was Kronos' API keys being compromised which allowed the attacker to programmatically drain funds from exchange accounts.
+================================================================================
+METADATA:
+prompt_tokens: 432
+answer_tokens: 170
+time_taken: 11.37 seconds

@@ -1,0 +1,27 @@
+Status: SUCCESS
+Message:  Based on the details provided, the attacker exploited a vulnerability in the liquidity share calculation logic used by the Sparta protocol. Specifically:
+
+1. The protocol's `calcLiquidityShare()` function queried the current balance of assets in the pool, which could be manipulated. 
+
+2. The attacker took a flash loan of 10K WBNB.
+
+3. They used the flash loaned WBNB to swap for a large amount of SPARTA tokens through the pool. 
+
+4. They deposited the SPARTA + small amount of WBNB into the pool, minting pool tokens.
+
+5. They repeated more swaps of flash loaned WBNB to SPARTA.
+
+6. They transferred all the swapped SPARTA and additional WBNB into the pool, inflating the pool's balances.
+
+7. They burned the pool tokens minted earlier to withdraw assets from the pool. Since the pool balances were inflated, they received more assets back compared to what they deposited.
+
+8. They repeated steps 4-7 multiple times to drain funds from the pool.
+
+9. They returned the original flash loan.
+
+In summary, the vulnerability was in the liquidity share calculation logic that relied on the current manipulable pool balances rather than cached balances at minting time. This allowed the attacker to artificially inflate balances and withdraw more funds than they put in.
+================================================================================
+METADATA:
+prompt_tokens: 669
+answer_tokens: 205
+time_taken: 13.39 seconds

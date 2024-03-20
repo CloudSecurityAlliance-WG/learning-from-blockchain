@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the vulnerability that enabled the attack was the RocketSwap team storing private keys on their server, which were then compromised via a brute force attack:
+
+"A brute force hack of the server was detected, and due to the proxy contract used for the farm contract, there were multiple high-risk permissions that led to the transfer of the farm's assets."
+
+The attackers were able to steal the private keys and use them to drain RocketSwap's farming contracts. 
+
+Storing keys on a server, especially unencrypted, is a major security risk. Private keys should be kept offline and properly secured. A brute force attack was able to compromise these keys.
+
+So in summary, the vulnerability was:
+
+1. Private keys stored unsecured on a server 
+2. Allowing a brute force attack to obtain the keys
+3. Keys then used to drain farming contracts
+
+There appears to be enough detail provided to determine how the attack took place. Let me know if you need any clarification or have additional questions!
+================================================================================
+METADATA:
+prompt_tokens: 542
+answer_tokens: 172
+time_taken: 8.94 seconds

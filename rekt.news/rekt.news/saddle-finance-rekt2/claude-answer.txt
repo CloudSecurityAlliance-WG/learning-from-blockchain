@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Based on the details provided, the exploit used a flaw in an old version of Saddle Finance's MetaSwapUtils library, which failed to use a VirtualPrice to calculate the value of LP tokens during metapool swaps. 
+
+Specifically:
+
+- The hacker made flash loan assisted swaps between sUSD and saddleUSD-V2 LP tokens in Saddle's sUSDv2 metapool. 
+
+- Due to the bug, they were able to manipulate the price of the saddleUSD-V2 LP tokens during the swaps.
+
+- After artificially inflating the value of the LP tokens, they were able to swap them back for more sUSD than they started with.
+
+- Repeating this process allowed them to drain funds from the pool.
+
+Saddle had previously identified and fixed this issue in the current version of MetaSwapUtils after a close call for Synapse protocol. However, the swap calculations were still relying on the old, vulnerable code.
+
+So in summary - the root cause was failure to properly implement an important security fix in the metapool swap calculations, allowing price manipulation due to lack of LP token price validation.
+================================================================================
+METADATA:
+prompt_tokens: 392
+answer_tokens: 175
+time_taken: 10.66 seconds

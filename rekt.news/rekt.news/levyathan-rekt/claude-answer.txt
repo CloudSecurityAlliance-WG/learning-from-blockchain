@@ -1,0 +1,15 @@
+Status: SUCCESS
+Message:  Based on the information provided, it seems the main vulnerability or weakness that enabled the attack was:
+
+The Levyathan developers left the private keys to a wallet with minting capability available on Github. Four months later, these keys were used to mint and dump LEV tokens, crashing the price.
+
+The post mortem specifically calls out that the developers made a critical mistake by leaving private keys that grant full control over the LEV token supply publicly accessible on GitHub. The attacker was able to find these keys and use them to mint a large amount of LEV tokens and sell them, draining value from the protocol.
+
+Leaving private keys publicly available in source code is a major security flaw that should never happen, especially for a wallet with minting capabilities. This enabled the attacker to easily compromise the LEV token contract and extract nearly all value from the protocol.
+
+In summary, the attack took place due to negligence on the part of the Levyathan developers in securing critical wallet private keys. No other technical details about the specifics of the attack itself are provided.
+================================================================================
+METADATA:
+prompt_tokens: 443
+answer_tokens: 184
+time_taken: 9.44 seconds

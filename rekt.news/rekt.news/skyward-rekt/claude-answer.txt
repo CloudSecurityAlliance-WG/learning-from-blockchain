@@ -1,0 +1,14 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that the attacker exploited was a lack of proper verification of the token_account_ids parameter in the redeem_skyward function. Specifically:
+
+- The redeem_skyward function allows users to redeem their SKYWARD tokens for wNEAR from the treasury
+- However, the function does not properly verify the token_account_ids parameter
+- This allowed the attacker to pass their own withdrawal address repeatedly within the transaction to drain the treasury of wNEAR
+- The attacker called the redeem_skyward function in a loop, draining 1.1M NEAR (worth $3.2M at the time) from the treasury
+
+So in summary, the vulnerability was the lack of input validation on a critical function parameter that allowed the attacker to repeatedly withdraw funds. There are enough technical details provided to determine how the attack took place.
+================================================================================
+METADATA:
+prompt_tokens: 384
+answer_tokens: 132
+time_taken: 8.13 seconds

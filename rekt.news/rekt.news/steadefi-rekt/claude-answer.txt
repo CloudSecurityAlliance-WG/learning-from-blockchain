@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the vulnerability that enabled the attack was the compromise of the Steadefi deployer address. Specifically:
+
+"According to Steadefi’s own [announcement](https://twitter.com/steadefi/status/1688638572608552960), the deployer address of the protocol was compromised."
+
+Since the deployer address owned all the vault contracts, the attacker was able to use their compromised access to transfer ownership of the contracts to themselves:
+
+"As the deployer was the owner of all of the platform’s vault contracts, the attacker was able to transfer ownership (for example, the USDC vault on Abritrum [in this tx](https://arbiscan.io/tx/0x1e94a17f392c77fd897b4bfb66a1364b5508de6b2a36f3b0227a4a9ca4a657f0)) to their own address."
+
+After gaining ownership, the attacker was then able to drain funds by taking "owner-only actions such as allowing any wallet to be able to borrow any available funds from the lending vaults."
+
+So in summary, the key vulnerability was the ability for the compromised deployer address to transfer ownership of critical contracts to the attacker, enabling the theft of funds. This was due to a successful phishing attack or other compromise of the original deployer address. There are no further technical details provided on exactly how the deployer address was compromised.
+================================================================================
+METADATA:
+prompt_tokens: 576
+answer_tokens: 186
+time_taken: 16.62 seconds

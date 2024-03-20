@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the information provided, the vulnerability or weakness that enabled the attacker to steal funds appears to be compromised seed phrases that were stored in LastPass. Specifically:
+
+- LastPass suffered security breaches in August and November 2022, with the November breach compromising encrypted customer vault data containing passwords and other sensitive information.
+
+- The article states that the thefts of crypto funds "appear to be linked to seed phrases stored in LastPass". This suggests that the attackers were somehow able to obtain seed phrases for crypto wallets from the LastPass data breach.
+
+- The victims are described as experienced crypto users, making it unlikely their funds were stolen through simple phishing or social engineering. This further points to compromised seed phrases as the root cause.
+
+- The article speculates that either the attackers cracked individual password vaults to obtain seed phrases, or that LastPass has not fully disclosed the extent of the data compromised. In either case, stolen seed phrases enabled the thefts.
+
+In summary, the attackers exploited a weakness in LastPass's security to obtain seed phrases for crypto wallets. With the seed phrases, they were able to easily drain funds from those wallets undetected over time. However, there are still open questions around how exactly the seeds were compromised that LastPass has apparently not clarified publicly.
+================================================================================
+METADATA:
+prompt_tokens: 625
+answer_tokens: 218
+time_taken: 12.60 seconds

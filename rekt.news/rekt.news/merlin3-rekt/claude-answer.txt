@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability exploited was related to how Merlin's reward system calculated profits and distributed rewards:
+
+1. Merlin's system rewarded users with MERL tokens based on the performance fees/profits they brought in. Specifically, it rewarded 35 MERL tokens for every BNB in profits.
+
+2. The system calculated profits by converting any received BNB to WBNB. So an increase in the WBNB balance was seen as profit by the system. 
+
+3. The attacker realized they could artificially increase the WBNB balance by simply sending BNB directly to the contract. This BNB would also get converted to WBNB upon receipt.
+
+4. So the attacker deposited BNB into the contract. This increased the WBNB balance, which the system saw as profit. The attacker was then able to claim 35 MERL rewards for every BNB they deposited.
+
+In essence, the system failed to validate where BNB/WBNB profits were actually coming from. By blindly rewarding based on WBNB balance changes, it allowed the attacker to game the system by artificially inflating the balance.
+================================================================================
+METADATA:
+prompt_tokens: 401
+answer_tokens: 172
+time_taken: 10.21 seconds

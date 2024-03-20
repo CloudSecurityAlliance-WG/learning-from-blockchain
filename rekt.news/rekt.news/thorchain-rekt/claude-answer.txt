@@ -1,0 +1,16 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that allowed the attacker to drain funds from THORChain was located in the Ethereum Bifrost bridge code. Specifically:
+
+- The code contained an override loop that was intended only for use in `vaultTransferEvent` transactions. 
+- The attacker was able to wrap the router with their own contract, allowing them to access this override loop.
+- When sending a transaction with 0 call value and 0 deposit amount, the override loop caused the transaction's `msg.value` (set to 200) to be mistakenly read as the `txvalue()`.
+- The attacker exploited this in a loop to drain liquidity from the protocol across various assets.
+
+The report states that the fix is to make the override only happen for `vaultTransferEvent` transactions, as intended. The comments in the code warned that it was important to keep this check outside of the loop, but it seems that vulnerability was left open, allowing the attack.
+
+So in summary, the override loop could be improperly accessed and allowed the attacker to drain funds by misrepresenting transaction values. The code had warnings about restricting the override properly, but they were not implemented correctly.
+================================================================================
+METADATA:
+prompt_tokens: 470
+answer_tokens: 191
+time_taken: 10.04 seconds

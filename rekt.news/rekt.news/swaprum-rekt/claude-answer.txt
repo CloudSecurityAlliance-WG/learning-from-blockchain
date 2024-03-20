@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the attacker exploited the ability of the contract owner to upgrade the reward contract to a malicious version that included a backdoor function called add(). 
+
+Specifically:
+
+- The project's reward contract was upgraded to a new malicious version that included the add() function.
+
+- The add() function allowed the contract owner/deployer address to steal user funds by draining the underlying liquidity. 
+
+- The attacker address (listed as the Swaprum Deployer address) then used the add() function to steal user funds.
+
+- Over 1600 ETH stolen this way was bridged to Ethereum and deposited into Tornado Cash to launder the funds.
+
+The audit by Certik had pointed out centralization risks with the owner having authority over certain aspects. However, the audit report did not explicitly call out the specific risk of the owner upgrading contracts or intentionally stealing funds.
+
+Overall, this incident exploited the centralized upgradeability and control of the contracts to rug user funds. The audit report, while noting centralization risks, did not adequately highlight the potential for an insider exploit.
+================================================================================
+METADATA:
+prompt_tokens: 430
+answer_tokens: 178
+time_taken: 10.75 seconds

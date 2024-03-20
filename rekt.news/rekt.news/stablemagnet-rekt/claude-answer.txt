@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, the attacker exploited an unverified SwapUtils library in the StableMagnet smart contract. Specifically:
+
+1) The StableMagnet smart contract used an external SwapUtils library for core functionality. This library was not verified on-chain.
+
+2) The attacker deployed their own malicious SwapUtils library with the same address (0xE25d05777BB4bD0FD0Ca1297C434e612803eaA9a) but different code.
+
+3) The unverified nature of the library meant the explorers and auditors were looking at the benign code in the source, not what was actually deployed. 
+
+4) The malicious library contained code to drain all liquidity pools and transfer tokens from user wallets who had approved StableMagnet allowance. This drained $27 million+ funds.
+
+In summary, the lack of on-chain verification for the critical SwapUtils library allowed the attacker to deploy malicious code masquerading as the legitimate library. This permitted stealing funds from liquidity and user wallets due to the over-privileged nature of the approval allowance users had granted to StableMagnet.
+================================================================================
+METADATA:
+prompt_tokens: 792
+answer_tokens: 154
+time_taken: 14.39 seconds

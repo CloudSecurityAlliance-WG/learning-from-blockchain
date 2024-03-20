@@ -1,0 +1,27 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that enabled the attacker to steal funds from Sovryn was an external call to the callTokensToSend function.
+
+Specifically, the analysis states:
+
+"The attacker uses the LP to borrow 52,999 side tokens. The closeWithDeposit function is then called to repay the collateral. 26,900 side tokens were swapped for 4.17 RBTCs. Notice that the attacker minted 26,000 side tokens into 22,653 Load Token, while in the closeWithDeposit function, there is no such mint function. Then we found that the attacker used the side tokens to call the attack contract externally, and used the attack contract to call the mint function."
+
+So in summary:
+
+1. The attacker borrowed side tokens 
+2. They repaid some collateral to make their attack look legitimate
+3. They minted additional load tokens externally by calling the mint function from their attack contract
+4. This let them mint more load tokens than they should have been able to
+5. They burned these extra load tokens to withdraw more side tokens
+6. They repeated this to drain funds
+
+The key vulnerabilities were:
+
+- The ability to externally call the mint function from an attack contract
+- The tokenPrice function relying on the number of side tokens to calculate load token price, which was not updated properly during the attack
+
+This allowed the attacker to essentially double their borrowed funds and drain the lending pools.
+================================================================================
+METADATA:
+prompt_tokens: 681
+answer_tokens: 231
+time_taken: 11.75 seconds

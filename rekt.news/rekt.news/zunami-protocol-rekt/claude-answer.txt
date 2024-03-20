@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that enabled the attack was a flawed price calculation in the Zunami protocol's totalHoldings function. Specifically:
+
+- The attacker used flash loans to make large token swaps (e.g. with SDT), causing slippage in Zunami's liquidity pools on Curve. 
+
+- This slippage allowed the attacker to manipulate the price used to calculate the value of the pool's LP tokens. 
+
+- The flawed totalHoldings function enabled the manipulated prices to be used to drain funds from the pools.
+
+The root cause was that the totalHoldings function incorrectly calculated prices in a way that could be exploited via slippage from flash loan token swaps. This allowed the attacker to drain the zETH and UZD pools by manipulating the perceived value of the pool's LP tokens.
+
+In summary, the attack took advantage of a vulnerability in how Zunami's smart contracts calculated LP token prices, enabling manipulation via flash loan driven slippage on Curve.
+================================================================================
+METADATA:
+prompt_tokens: 563
+answer_tokens: 156
+time_taken: 10.82 seconds

@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Unfortunately, there is not enough information in the text to conclusively determine the technical details of how the attack took place. 
+
+The key details given are:
+
+- There was a bug in the swapTokenForExactToken code of the Monoswap contract that allowed the attacker to manipulate the price of the MONO token.
+
+- The attacker was able to use the same token for both the tokenIn and tokenOut parameters in the __updateTokenInfo function, creating a loop that pumped the price of MONO with repeated "swaps".
+
+- Once the MONO price was inflated, the attacker cashed it out into other tokens in the Single Token Liquidity pools.
+
+However, without seeing the actual contract code or details on the specific vulnerability, I cannot explain the full technical process of how the attack was executed. 
+
+The text mentions audits were done by Halborn and Peckshield which missed this bug, but does not provide any further specifics.
+
+In summary, while the high-level attack process is described, there are not enough technical details provided in the text to determine the precise vulnerability or code exploit used to manipulate the token price. Please let me know if you need any clarification or have additional details to share.
+================================================================================
+METADATA:
+prompt_tokens: 608
+answer_tokens: 200
+time_taken: 11.51 seconds

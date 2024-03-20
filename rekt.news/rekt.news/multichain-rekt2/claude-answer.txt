@@ -1,0 +1,23 @@
+Status: SUCCESS
+Message:  Based on the information provided, there are no definitive details disclosed on exactly how the attacker gained access and was able to drain funds from Multichain. 
+
+The article states:
+
+"While the exact attack vector is still to be determined, the[behaviour](https://twitter.com/BeosinAlert/status/1677281092116840448) of transactions appear to suggest that an attacker was able to control the addresses directly."
+
+It then provides some plausible methods for how the attacker may have gained access:
+
+"Plausible [methods](https://twitter.com/BeosinAlert/status/1677281299860709377) of gaining access include a back-end breach, obtaining private keys via spearphishing or the actions of a malicious insider."
+
+However, there is no confirmation presented on which, if any, of these methods were actually used. 
+
+The article also notes that the funds have not been moved since being drained, potentially indicating the actions of a whitehat hacker rather than a malicious attacker.
+
+So in summary, there is not enough definitive information provided to determine exactly how the attack took place. The key phrase that sums this up is:
+
+"There is not enough information to determine how the attack took place"
+================================================================================
+METADATA:
+prompt_tokens: 633
+answer_tokens: 171
+time_taken: 13.65 seconds

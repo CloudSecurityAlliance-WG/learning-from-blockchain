@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Based on the information provided, it seems the vulnerability that enabled the attacker to execute this incident was a compromised 3-of-4 multisig securing the Poly Network funds. 
+
+Specifically, the post states:
+
+"Almost two years after topping the[leaderboard](https://rekt.news/leaderboard/) with a [complex hack](https://rekt.news/polynetwork-rekt/) of over $600M, this time the losses totalled just $4.4M.
+
+_And the attack was a simple case of a compromised 3-of-4 multisig._"
+
+And later: 
+
+"**In contrast to Poly’s last incident, this time appears to be a far simpler case of compromised keys; three of four multisig signers validated deposit proofs, granting the attacker access to funds.**"
+
+So it seems that 3 out of the 4 keys in a multisig scheme that was used to secure funds were compromised by the attacker, allowing them to access and steal funds by providing valid multisig approvals.
+
+The post does not provide full technical details on exactly how the keys were compromised or the specifics of the multisig setup. But the root cause seems to be inadequate security around the multisig keys. This allowed the attacker to gain control of enough keys to execute valid multisig transactions and steal funds.
+================================================================================
+METADATA:
+prompt_tokens: 473
+answer_tokens: 187
+time_taken: 13.84 seconds
