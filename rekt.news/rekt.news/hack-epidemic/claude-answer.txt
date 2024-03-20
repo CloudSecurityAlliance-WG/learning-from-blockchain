@@ -1,0 +1,25 @@
+Status: SUCCESS
+Message:  Unfortunately, there are not enough technical details provided in the text to determine exactly how the attacks were carried out. 
+
+The text mentions that the attacks on Cheese Bank and Origin Protocol involved:
+
+- Flash loans
+- Fake tokens
+- Re-entrancy
+
+However, it does not provide specifics on how these elements were combined and exploited to steal funds.
+
+Some possibilities based on the limited information:
+
+- The attackers took out flash loans, used the borrowed funds to manipulate token prices or protocol states in some way, and then stole money before repaying the flash loans.
+
+- Fake tokens were minted and deposited as collateral to borrow assets from the protocol.
+
+- Re-entrancy was used to repeatedly call contract functions before state was updated properly.
+
+But without more technical specifics on the exact attack vectors, contract vulnerabilities, etc., there is not enough information provided to determine precisely how the attacks took place.
+================================================================================
+METADATA:
+prompt_tokens: 758
+answer_tokens: 151
+time_taken: 9.90 seconds

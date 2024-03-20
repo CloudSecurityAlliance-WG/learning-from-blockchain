@@ -1,0 +1,21 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the attacker exploited a vulnerability in the price calculation mechanism used by Harvest Finance for deposits and withdrawals from their liquidity pools. Specifically:
+
+- Harvest Finance was using some custom price index/calculation rather than just using Curve's get_virtual_price(). This custom mechanism was the source of the vulnerability.
+
+- The tolerance check for price deviations between deposits and withdrawals was not high enough. Specifically, there was a 3% slippage tolerance that was too high.
+
+- The attacker took out a USDT flash loan, then used Curve to swap funds and manipulate stablecoin prices. 
+
+- They deposited and withdrew from Harvest's yUSDT vault, withdrawing more yUSDT than they deposited due to the price discrepancy. 
+
+- They repeated this arbitrage about 32 times to extract millions in profits.
+
+So in summary, the vulnerability stemmed from Harvest's custom deposit/withdrawal price calculation mechanism and the lack of proper safeguards against manipulation. The attacker capitalized on this by using flash loans and Curve to distort prices and profit from deposit/withdrawal arbitrage.
+
+Hope this helps explain the technical details behind the attack vector! Let me know if you need any clarification or have additional questions.
+================================================================================
+METADATA:
+prompt_tokens: 1307
+answer_tokens: 195
+time_taken: 14.97 seconds

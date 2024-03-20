@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability that the attacker exploited was:
+
+A 0-day compiler bug in certain older versions of Vyper (0.2.15, 0.2.16 and 0.3.0), the language Curve's contracts are written in. Specifically, there was a misalignment of storage slots between two functions (add_liquidity and remove_liquidity) which causes a malfunction in the nonreentrant guard. This allows the attacker to re-enter the transaction between these two functions in order to manipulate LP token prices and drain the pool.
+
+So in summary:
+
+- The root cause was a compiler-level bug in Vyper
+- It caused a malfunction in the nonreentrant guard due to a storage slot misalignment
+- This enabled reentrancy between two functions to manipulate prices and drain funds
+
+The key vulnerabilities were the compiler bug and the resulting reentrancy it enabled. The write-up has enough technical details to determine this.
+================================================================================
+METADATA:
+prompt_tokens: 1221
+answer_tokens: 141
+time_taken: 13.67 seconds

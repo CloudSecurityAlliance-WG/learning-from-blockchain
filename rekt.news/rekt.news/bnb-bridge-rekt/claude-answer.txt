@@ -1,0 +1,15 @@
+Status: SUCCESS
+Message:  Based on the details provided, the attacker exploited a vulnerability in the way the Binance Bridge verified proofs from the Binance Beacon Chain. Specifically:
+
+- The bridge uses "vulnerable IAVL verification" which the attacker was able to forge for block 110217401 from August 2020.
+
+- As explained by samczsun, there was a bug that allowed the attacker to forge arbitrary messages by submitting falsified proofs of deposit from the Binance Beacon Chain. 
+
+- The attacker used this to forge two messages minting 1 million BNB each to their address.
+
+So in summary, the vulnerability was in the bridge's verification of Beacon Chain proofs, which allowed the attacker to exploit it by forging fake deposit proofs to mint BNB tokens to themselves. The technical details of exactly how the IAVL verification was vulnerable are not provided, but the key issue was the bridge's inability to properly verify the authenticity of Beacon Chain proofs.
+================================================================================
+METADATA:
+prompt_tokens: 929
+answer_tokens: 152
+time_taken: 12.31 seconds

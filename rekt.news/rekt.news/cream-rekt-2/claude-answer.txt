@@ -1,0 +1,17 @@
+Status: SUCCESS
+Message:  Based on the details provided, the attacker took advantage of a pricing vulnerability in Cream Finance's internal PriceOracleProxy for yUSDVault tokens. Specifically:
+
+1. The attacker manipulated the price of yUSDVault tokens by first redeeming a large amount of yUSDVault for the underlying yUSD, drastically reducing the yUSDVault totalSupply. 
+
+2. They then made a small yUSD deposit back into the yUSDVault, which led the PriceOracleProxy to incorrectly increase the price of yUSDVault by around a factor of two.
+
+3. This allowed the attacker to use their now overvalued yUSDVault tokens as collateral on Cream Finance to borrow assets from lending pools and default on the loans.
+
+So in summary, the vulnerability was in the yUSDVault price oracle logic, which did not properly account for sudden large changes in totalSupply when determining the yUSDVault price. This allowed the attacker to artificially inflate their collateral value and drain lending pools.
+
+The write-up provides detailed steps on how the manipulation was executed using flash loans, repeated lending and borrowing, and transfer of funds across two addresses controlled by the attacker.
+================================================================================
+METADATA:
+prompt_tokens: 986
+answer_tokens: 176
+time_taken: 14.69 seconds

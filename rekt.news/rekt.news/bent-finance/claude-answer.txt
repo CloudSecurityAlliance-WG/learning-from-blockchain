@@ -1,0 +1,13 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the vulnerability exploited was the ability for the Bent Finance team to manually adjust balances in the rewards contract. Specifically:
+
+"Bent Finance [cvxCRV contract](https://etherscan.io/address/0x270b6aff561284ef380cdd6d8b036f4981049a86) was [updated](https://etherscan.io/tx/0xf711641ea9814d78780c8a51ad734ad44d58baf3f97256a3f5ec3200a29eadc7) on Nov. 30, manually adjusting the balance of the exploiter’s [address.](https://etherscan.io/address/0xd23cfffa066f81c7640e3f0dc8bb2958f7686d1f)"
+
+This allowed the exploiter to assign themselves "enormous amounts of rewards, far exceeding the TVL of Bent Finance itself."
+
+So in summary, the vulnerability was the centralized ability for the Bent Finance team to manually adjust balances. This seems to point to an inside job rather than a technical smart contract exploit.
+================================================================================
+METADATA:
+prompt_tokens: 473
+answer_tokens: 96
+time_taken: 8.43 seconds

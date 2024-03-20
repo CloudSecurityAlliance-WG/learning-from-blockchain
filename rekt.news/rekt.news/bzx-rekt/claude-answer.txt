@@ -1,0 +1,15 @@
+Status: SUCCESS
+Message:  Based on the details provided, the vulnerability or weakness the attacker used was:
+
+A bZx developer was sent a phishing email with a malicious Word document macro that when opened, compromised the private keys to the developer's personal wallet. This wallet had access/control over the bZx contracts on Polygon and BSC. By gaining access to this wallet, the attacker was able to drain funds from the bZx contracts on those chains.
+
+So in summary:
+- The attack vector was a phishing email that compromised a developer's private keys
+- This gave the attacker access to bZx contracts on Polygon and BSC which they drained of funds
+
+The code itself does not seem to have been compromised. Rather, the weakness was that a single developer wallet had too much control/access. So while human error and phishing were involved, the larger vulnerability was inadequate key management and separation of duties within bZx.
+================================================================================
+METADATA:
+prompt_tokens: 781
+answer_tokens: 150
+time_taken: 10.86 seconds

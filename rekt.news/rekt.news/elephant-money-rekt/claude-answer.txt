@@ -1,0 +1,27 @@
+Status: SUCCESS
+Message:  Based on the information provided, the attacker exploited a price manipulation vulnerability in the Elephant Money protocol to profit from flash loans. Specifically:
+
+- The attacker took out large flash loans of WBNB and BUSD.
+
+- They used the WBNB flash loan to mass purchase ELEPHANT tokens, drastically increasing the ELEPHANT price. 
+
+- They then minted the stablecoin TRUNK by depositing BUSD. The TRUNK minting process further raised the ELEPHANT price by using deposited BUSD to purchase more ELEPHANT. This benefited the attacker's existing ELEPHANT position.
+
+- The attacker swapped their now much more valuable ELEPHANT back to WBNB, earning a large profit. They also redeemed their freshly minted TRUNK for additional WBNB profits. 
+
+- After repaying the original flash loans, the attacker was left with ~$4M profit.
+
+- They repeated this cycle multiple times to accumulate over $11M in profits.
+
+The core vulnerabilities were:
+
+1) The ability to manipulate ELEPHANT price via large temporary WBNB purchases. 
+
+2) A flawed TRUNK minting model that could be gamed to further increase ELEPHANT price.
+
+The attacker cleverly combined flash loans and price manipulation to exploit these issues for profit.
+================================================================================
+METADATA:
+prompt_tokens: 439
+answer_tokens: 187
+time_taken: 12.20 seconds

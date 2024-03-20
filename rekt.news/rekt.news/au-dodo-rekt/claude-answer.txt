@@ -1,0 +1,19 @@
+Status: SUCCESS
+Message:  Based on the details provided, the attacker exploited a vulnerability in the DODO V2 Crowdpooling smart contract that allows the init() function to be called multiple times. Here are the key steps the attacker took:
+
+1. The attacker created a fake token and initialized the smart contract with it by calling init().
+
+2. The attacker called sync() to set the token balance to 0. 
+
+3. The attacker called init() again, this time with a real token from DODO's pools.
+
+4. The attacker used a flash loan to drain all the real tokens from the pools and bypass the flash loan check.
+
+The ability to call init() multiple times allowed the attacker to trick the contract into thinking the fake token was legitimate, then replace it with a real token and drain the pools. This was possible due to the contract not preventing multiple init() calls.
+
+In summary, the vulnerability was the lack of validation around init() being called multiple times, which allowed the attacker to manipulate token balances and drain funds.
+================================================================================
+METADATA:
+prompt_tokens: 758
+answer_tokens: 171
+time_taken: 12.49 seconds

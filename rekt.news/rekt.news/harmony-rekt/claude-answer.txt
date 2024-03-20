@@ -1,0 +1,22 @@
+Status: SUCCESS
+Message:  Based on the details provided, it seems the vulnerability that allowed the attacker to execute this theft was the compromised private keys for two out of the five multisig addresses securing the Harmony bridges. 
+
+Specifically, the private keys for the following two addresses were compromised, giving the attacker control of them:
+
+0xf845A7ee8477AD1FB4446651E548901a2635A915
+
+0x812d8622C6F3c45959439e7ede3C580dA06f8f25
+
+Since the Harmony bridges operated on a 2 out of 5 multisig, by gaining control of two of those signing keys, the attacker could unilaterally sign transactions to drain funds from the bridges.
+
+The exact method used to compromise those private keys is not clear from the information provided. Some possibilities speculated are:
+
+- The private keys were stored on hot wallet servers that were compromised by the attacker gaining access.
+- The keys were compromised through phishing or social engineering attacks on the key holders.
+
+But there are no confirmed details on the specific vulnerability. In summary, the attack took advantage of a 2 out of 5 multisig bridge where the attacker managed to compromise two of the signing keys. This gave them unilateral control to steal funds.
+================================================================================
+METADATA:
+prompt_tokens: 462
+answer_tokens: 182
+time_taken: 15.11 seconds
