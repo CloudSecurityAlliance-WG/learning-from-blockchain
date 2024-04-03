@@ -12,5 +12,7 @@ then get all the URLs with content_downloader.py from AI-Prompting and extract t
 
 Bundle the data together... URL, content, etc. As for a summary?
 
+## Google Drive:
 
+https://drive.google.com/drive/folders/1nrbpnbJz7T4LvpljXBnzLJNPktlJOGq9
 
