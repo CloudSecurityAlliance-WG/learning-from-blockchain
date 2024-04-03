@@ -29,4 +29,6 @@ https://drive.google.com/drive/folders/1nrbpnbJz7T4LvpljXBnzLJNPktlJOGq9
 * Values per hack, any recovery if possible
 * Ransomware payments - see if any got returned/used to arrest the gang/etc.
 * Root causes/contributing factors like flash loans or bridges to exfiltrate the funds
-* 
+* Clustering of data and the incidents where possible
+* Losses total by category
+* Value of loss at time, and value of loss "currently"? % of coins stolen as well?
