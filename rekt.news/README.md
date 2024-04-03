@@ -18,6 +18,6 @@ https://drive.google.com/drive/folders/1nrbpnbJz7T4LvpljXBnzLJNPktlJOGq9
 
 ## Related links:
 
-https://github.com/slowmist - slowmist project
-https://hacked.slowmist.io/ - list of hacking incidents
-https://rekt.news/ - list of blockchain incidents
+* https://github.com/slowmist - slowmist project
+* https://hacked.slowmist.io/ - list of hacking incidents
+* https://rekt.news/ - list of blockchain incidents
