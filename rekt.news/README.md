@@ -32,3 +32,4 @@ https://drive.google.com/drive/folders/1nrbpnbJz7T4LvpljXBnzLJNPktlJOGq9
 * Clustering of data and the incidents where possible
 * Losses total by category
 * Value of loss at time, and value of loss "currently"? % of coins stolen as well?
+* Any patterns or trends in the day/week/months following the breac?
