@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Frekt-event-rekt-hopium-ethcc5","\u002Frekt-event-en-direkto","\u002Frekt-event-shiprekt","\u002Frekt-function","\u002Fleaderboard","\u002Fen-direkto-clue-52656b744851","\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
